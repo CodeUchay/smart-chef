@@ -88,7 +88,7 @@ const DateScanner = () => {
         </>
       ) : (
         <div>
-          <Webcam ref={webcamRef} videoConstraints={videoConstraints} className='border w-72 h-100 lg:w-120 lg:h-180 m-3 border-slate-500 rounded-xl'/>
+          <Webcam ref={webcamRef} videoConstraints={videoConstraints} className='border max-w-xs m-3 border-slate-500 rounded-xl'/>
           <div> <div className="mb-4 flex flex-col">
            <div className='flex flex-row'> 
           <button onClick={captureImage} className='m-2 mx-auto bg-slate-200 rounded px-3 py-2'>Capture Image</button>
