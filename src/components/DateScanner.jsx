@@ -90,15 +90,15 @@ const DateScanner = () => {
         <div>
           <Webcam ref={webcamRef} videoConstraints={videoConstraints} className='border max-w-xs m-3 border-slate-500 rounded-xl'/>
           <div> <div className="mb-4 flex flex-col">
-           <div className='flex flex-row'> 
-          <button onClick={captureImage} className='m-2 mx-auto bg-slate-200 rounded px-3 py-2'>Capture Image</button>
-          <button onClick={toggleCamera} className='m-2 mx-auto bg-slate-200 rounded px-2 py-2'>Turn Camera</button>
+           <div className='flex flex-row justify-between'> 
+          <button onClick={captureImage} className='m-2  bg-slate-200 rounded px-3 py-2'>Capture Image</button>
+          <button onClick={toggleCamera} className='m-2  bg-slate-200 rounded px-2 py-2'>Turn Camera</button>
           </div> <span className='text-white text-center font-semibold'>OR</span>
         <input
           type="file"
           accept="image/*"
           onChange={handleImageUpload}
-          className="m-2 bg-slate-200 rounded"
+          className="m-3 w-64 bg-slate-200 rounded"
         />
       </div></div>
           </div>
